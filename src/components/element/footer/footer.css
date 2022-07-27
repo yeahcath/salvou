@@ -1,0 +1,17 @@
+.footer p {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.footer a {
+    font-size: 12px;
+}
+
+.footer a:hover {
+    color: #61c24e;~~~~~~~~~~~~
+}
+
+footer {
+    text-align: center;
+    background-color: #eeeff4;
+}

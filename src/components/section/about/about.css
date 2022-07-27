@@ -5,11 +5,16 @@ about {
 
 .about-container {
     max-width: 920px;
-    margin: 0 auto;
+    margin: 0 auto; 
+    
 }
 
-.about-text >p{
+.about-container p {
     text-align: justify;
+    line-height: 2.0em;
+    color: red;
+    font-size: 1.2rem;
+
 }
 
 @media screen and (max-width: 1024px) {
