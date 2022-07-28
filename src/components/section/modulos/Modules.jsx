@@ -2,35 +2,37 @@ import { useState, useEffect } from 'react'
 import Tittle from '../../element/tittle/Tittle'
 
 
-const Modules = () => {
+const Conteudo = () => {
 
-    const [modules, setModules] = useState([])
+    const [conteudo, setConteudo] = useState([])
 
     useEffect(() => {
-        fetch('https://rickandmortyapi.com/api/character')
+        fetch('https://my-json-server.typicode.com/yeahcath/linkapi/db')
         .then(response => response.json())
-        .then(data => setModules(data.results))
+        .then(data => setConteudo(data.results))
         
-    }, [])
-    
+    }, [])    
 
     return(
         
-        <div className="modulos-container" id="#modulos">
+        <div className="modulos-container" id="modulos">
             <Tittle texto="O que você procura?" />
-            {modules.map(objeto => {
-                return (
-                    <div key={objeto.id}>
-                        <h4>{objeto.name}</h4>
-                        <img src={objeto.image} alt ={objeto.name}/>
-                    </div>
-                )
-            })}            
+            <div className="card">
+                {conteudo.map(objeto => {
+                    return (
+                        <article key={objeto.id}>
+                            <h3>Nome: {objeto.tittle}</h3>
+                            <p>Link: {objeto.link}</p>                            
+                        </article>
+                    )
+                })}  
+            </div>
+          
         </div>
     )
 
    
 }
 
-export default Modules
+export default Conteudo
 
