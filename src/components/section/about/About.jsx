@@ -1,5 +1,5 @@
-import Tittle from "../../element/tittle";
-import './about.css'
+import Tittle from '../../element/tittle/Tittle';
+import './about.css';
 
 const About = () => {
     return (

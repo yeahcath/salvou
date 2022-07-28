@@ -14,7 +14,7 @@
     max-height: 90vh;
     margin-left: 12vw;
     top: -18px;
-    animation: move 5s linear 2;
+    overflow: hidden;
 }
 
 .header-text {
@@ -26,5 +26,19 @@
 }
 
 .header-text > p {
-    margin-top: 50px;
+    margin: 50px 0;
 }
+
+@media screen and (max-width: 768px){
+    .header, .header-text {
+        justify-content: center;
+    }
+
+    .header-ilustration>img {
+        display: none;
+    }
+
+
+}
+
+    

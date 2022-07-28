@@ -1,8 +1,9 @@
 import './App.css';
 import Navbar from './components/section/navbar/Navbar';
 import Header from './components/section/header/Header';
-import About from './components/section/about/About';
+import Modules from './components/section/modulos/Modules';
 import Footer from './components/element/footer/Footer';
+import About from './components/section/about/About';
 
 function App() {
   
@@ -11,6 +12,7 @@ function App() {
       <Navbar />    
       <Header />
       <About />
+      <Modules />
       <Footer />      
     </div>
   )
