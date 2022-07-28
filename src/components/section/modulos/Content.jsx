@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react'
 import Tittle from '../../element/tittle/Tittle'
+import './content.css'
 
 
-const Conteudo = () => {
+const Content = () => {
 
     const [conteudo, setConteudo] = useState([])
 
     useEffect(() => {
-        fetch('https://my-json-server.typicode.com/yeahcath/linkapi/db')
+        fetch('https://my-json-server.typicode.com/yeahcath/linkapi')
         .then(response => response.json())
         .then(data => setConteudo(data.results))
         
@@ -34,5 +35,4 @@ const Conteudo = () => {
    
 }
 
-export default Conteudo
-
+export default Content

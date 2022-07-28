@@ -1,7 +1,13 @@
-modules-container {
-    background-color: rgb(238, 238, 157);
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+    margin: 0 auto;
 
 }
+
+
 
 .card {
     width: 190px;
