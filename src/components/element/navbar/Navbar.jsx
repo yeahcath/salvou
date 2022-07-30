@@ -1,4 +1,5 @@
 import './navbar.css';
+import { Link } from 'react-scroll'
 import logo from './icon-s.png'
 
 const Navbar = () => {
@@ -12,20 +13,20 @@ const Navbar = () => {
                 <div className="nav-menu">
                     <ul>
                         <li className="menu-item">
-                            Sobre
+                            <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} >Sobre</Link>
                         </li>
                     </ul>
                     <ul>
                         <li className="menu-item">
-                            Links uteis
+                            <Link activeClass="active" to="main" spy={true} smooth={true} offset={50} duration={500}>Links úteis</Link>
                         </li>
                     </ul>
                     <ul>
                         <li className="menu-item">
-                            Colabore
+                            <Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500}>Contato</Link>
                         </li>
                     </ul>
-                    
+
 
                 </div>
 

@@ -5,7 +5,7 @@ import './website.css'
 function Websites() {
     return (
 
-        <section className="card-section">
+        <section className="card-section" id="main">
             <div className="card-container">
                 <Tittle texto="O que você procura?" />
                 <div className="card-box">

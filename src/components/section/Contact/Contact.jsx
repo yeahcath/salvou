@@ -1,6 +1,6 @@
 const Contact = () => {
 
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
         <div>
             <h2 className="contact-text">
                 Conhece um site que te salvou e você quer dividir com outras programadoras? Me ache nas redes
@@ -8,7 +8,7 @@ const Contact = () => {
             
         </div>
         <div>
-            
+
 
         </div>
 
