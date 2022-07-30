@@ -1,11 +1,11 @@
-import websites from "../../../data";
+import websites from "../../../services/data";
 import Tittle from "../../element/tittle/Tittle";
 import './website.css'
 
 function Websites() {
     return (
 
-        <section className="card-section" id="main">
+        <section className="card-section" id="websites">
             <div className="card-container">
                 <Tittle texto="O que você procura?" />
                 <div className="card-box">

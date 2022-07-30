@@ -1,6 +1,6 @@
 import './navbar.css';
 import { Link } from 'react-scroll'
-import logo from './icon-s.png'
+import logo from './img/icon-s.png'
 
 const Navbar = () => {
     return (
@@ -18,7 +18,7 @@ const Navbar = () => {
                     </ul>
                     <ul>
                         <li className="menu-item">
-                            <Link activeClass="active" to="main" spy={true} smooth={true} offset={50} duration={500}>Links úteis</Link>
+                            <Link activeClass="active" to="websites" spy={true} smooth={true} offset={50} duration={500}>Links úteis</Link>
                         </li>
                     </ul>
                     <ul>
