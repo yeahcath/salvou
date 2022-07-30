@@ -1,38 +1,49 @@
-import { useState, useEffect } from 'react'
-import Tittle from '../../element/tittle/Tittle'
+import { useState, useEffect } from 'react';
+import Tittle from '../../element/tittle/Tittle';
 import './content.css'
 
 
 const Content = () => {
 
-    const [conteudo, setConteudo] = useState([])
+    const [contents, setContents] = useState([])
 
     useEffect(() => {
-        fetch('https://my-json-server.typicode.com/yeahcath/linkapi')
-        .then(response => response.json())
-        .then(data => setConteudo(data.results))
-        
-    }, [])    
+        fetch('./data.json', {
+            headers: {
+                Accept: "application/json"
+            }
+        }).then(response => response.json()).then(response => setContents(response.contents))
 
-    return(
-        
-        <div className="modulos-container" id="modulos">
+
+    }, [])
+
+    return (
+        <div className="card-container">
             <Tittle texto="O que você procura?" />
-            <div className="card">
-                {conteudo.map(objeto => {
-                    return (
-                        <article key={objeto.id}>
-                            <h3>Nome: {objeto.tittle}</h3>
-                            <p>Link: {objeto.link}</p>                            
-                        </article>
-                    )
-                })}  
-            </div>
-          
+            {contents.map((content) => {
+                return (
+                    <div key={content.id} className="card">
+
+                        <h4>{content.tittle}</h4>
+                        <a href={content.link}>{content.description}</a>
+                        <p>{content.tag}</p>
+
+                    </div>
+                )
+            })}
         </div>
     )
 
-   
-}
 
+
+
+
+
+   
+
+
+
+
+
+}
 export default Content
