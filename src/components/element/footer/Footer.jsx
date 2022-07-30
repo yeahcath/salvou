@@ -5,7 +5,7 @@ const Footer = () => {
 
         <footer className="footer">
             <p>
-                Desenvolvido em <strong>React</strong> por {' '}
+                Desenvolvido com <strong>React</strong> por {' '}
                 <b>
                     <a
                         href="https://www.linkedin.com/in/catharine-augusto/"

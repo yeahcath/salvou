@@ -14,7 +14,7 @@ const Header = () => {
                     <Button Link activeClass="active" to="websites" spy={true} smooth={true} offset={50} duration={500} text="Se liga só!"/>
                 </div>
                 <div className="header-ilustration">
-                    <img src={ilustration} alt="ilustraçao de ? "></img>
+                    <img src={ilustration} alt="ilustraçao de ? " className="img-header"></img>
                 </div>
             </header>
         </>

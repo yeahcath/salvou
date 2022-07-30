@@ -1,7 +1,9 @@
 .card-section {
     background-color: rgb(198, 145, 198);
     text-align: center;
-    padding-bottom: 10%;
+    padding: 80px 0;
+    width: 100vw;
+    margin: 0 auto;
 }
 
 
@@ -43,8 +45,8 @@
     border-radius: 0.7rem;
     border: 2px solid #18191f;
     box-shadow: 0 3px 0 #18191f;
-    background-color: #e272a6;
-    color: rgb(19, 5, 74);
+    background-color: #5657CE;
+    color: rgb(227, 225, 237);
     font-size: 1rem;
     padding: .5rem 1rem;
     position: absolute;

@@ -1,9 +1,10 @@
 import './button.css'
+import { Link } from 'react-scroll'
 
 const Button = ({ text }) => {
     return (
         <button>
-            <span className="button_top">{text}</span>
+            <Link activeClass="active" to="websites" spy={true} smooth={true} offset={50} duration={500} className="button_top">{text}</Link>
         </button>
     )
 
