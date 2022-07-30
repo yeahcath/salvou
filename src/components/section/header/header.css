@@ -1,5 +1,7 @@
 .header {
-    background-color: #a07fec;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
     height: 90vh;
     display: flex;
     max-width: 100%;
@@ -7,7 +9,7 @@
 }
 
 .header-ilustration>img {
-    
+
     position: relative;
     max-width: fit-content;
     z-index: 100;
@@ -23,14 +25,18 @@
     max-width: 400px;
     margin-left: 10vw;
     margin-top: calc((90vh - 330px) / 2);
+    
 }
 
-.header-text > p {
+.header-text>p {
     margin: 50px 0;
+    font-weight: 500;
 }
 
-@media screen and (max-width: 768px){
-    .header, .header-text {
+@media screen and (max-width: 768px) {
+
+    .header,
+    .header-text {
         justify-content: center;
     }
 
@@ -40,5 +46,3 @@
 
 
 }
-
-    

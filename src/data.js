@@ -2,9 +2,9 @@ const websites = [
     {
         "id": 1,
         "tag": "css",
-        "tittle": "CSS Froggy",
-        "description": "Um jogo para aprender CSSS flexbox",
-        "link": "https://flexboxfroggy.com/"
+        "tittle": "Color Hunt",
+        "description": "Um site em inglês para escolher paleta de cores",
+        "link": "https://colorhunt.co/"
     },
     {
         "id": 2,
